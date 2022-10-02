@@ -1,9 +1,9 @@
 <script>
-  import { store } from "./../store";
+
 </script>
 
 <div class="resume-toolbar d-flex align-items-center">
-  <div class="flex-grow-1 fw-bold">{$store.filename}</div>
+  <div class="flex-grow-1 fw-bold">Filename.pdf</div>
   <button class="btn btn-success me-2 btn-lg btn-sm">
     <i class="fa fa-comment" />
   </button>
