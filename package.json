@@ -15,6 +15,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "sveltestrap": "^5.9.0"
   }
 }
