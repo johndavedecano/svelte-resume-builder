@@ -1,4 +1,11 @@
 <script>
+  import AwardsModal from "./components/modals/AwardsModal.svelte";
+  import CertificationsModal from "./components/modals/CertificationsModal.svelte";
+  import CharacterReferenceModal from "./components/modals/CharacterReferenceModal.svelte";
+  import EducationModal from "./components/modals/EducationModal.svelte";
+  import InformationModal from "./components/modals/InformationModal.svelte";
+  import SkillsModal from "./components/modals/SkillsModal.svelte";
+  import WorkHistoryModal from "./components/modals/WorkHistoryModal.svelte";
   import ResumePreview from "./components/ResumePreview.svelte";
   import ResumeToolbar from "./components/ResumeToolbar.svelte";
   import Sections from "./components/Sections.svelte";
@@ -21,6 +28,13 @@
       </div>
     </div>
   </div>
+  <AwardsModal />
+  <CertificationsModal />
+  <CharacterReferenceModal />
+  <EducationModal />
+  <InformationModal />
+  <SkillsModal />
+  <WorkHistoryModal />
 </div>
 
 <style>

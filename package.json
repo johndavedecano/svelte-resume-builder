@@ -13,5 +13,8 @@
     "svelte": "^3.49.0",
     "svelte-dnd-action": "^0.9.20",
     "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "sveltestrap": "^5.9.0"
   }
 }
