@@ -120,7 +120,7 @@
 </Modal>
 
 <Modal isOpen={$store.open} {toggle} size="lg">
-  <ModalHeader {toggle}>Educations</ModalHeader>
+  <ModalHeader {toggle}>Character Reference</ModalHeader>
   <ModalBody>
     <Table>
       <tbody>
