@@ -16,10 +16,23 @@
 
   const toggle = () => store.toggle(!$store.open);
 
+  let set = false;
+
+  $: if ($store.open && !set) {
+    item = {
+      name: $store.item.name,
+      mobile_number: $store.item.mobile_number,
+      email: $store.item.email,
+      description: $store.item.description,
+    };
+    set = true;
+  }
+
   let item = {
     name: "",
     mobile_number: "",
     email: "",
+    description: "",
   };
 
   let error = "";
@@ -43,6 +56,8 @@
       error = "description field is required";
       return;
     }
+
+    store.saveChanges(item);
   };
 </script>
 

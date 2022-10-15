@@ -3,7 +3,12 @@ import { writable } from "svelte/store";
 const createStore = () => {
   const initialState = {
     open: false,
-    items: [],
+    item: {
+      name: "",
+      mobile_number: "",
+      email: "",
+      description: "",
+    },
   };
 
   const { subscribe, set, update } = writable({ ...initialState });
@@ -15,6 +20,12 @@ const createStore = () => {
     update,
     toggle(open = false) {
       return update((v) => ({ ...v, open }));
+    },
+    saveChanges(item) {
+      return update((v) => ({
+        ...v,
+        item,
+      }));
     },
   };
 };
