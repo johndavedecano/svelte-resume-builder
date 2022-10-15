@@ -15,8 +15,6 @@
 
   import { store } from "./../../stores/skills.store";
 
-  import moment from "moment";
-
   const toggle = () => store.toggle(!$store.open);
 
   let open = false;
@@ -28,7 +26,13 @@
 
   let error = "";
 
-  const addNew = () => (open = true);
+  const addNew = () => {
+    open = true;
+    item = {
+      name: "",
+      rating: 0,
+    };
+  };
 
   const saveItem = () => {
     if (item.name === "") {

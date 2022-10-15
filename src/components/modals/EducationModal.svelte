@@ -29,7 +29,15 @@
 
   let error = "";
 
-  const addNew = () => (open = true);
+  const addNew = () => {
+    open = true;
+    item = {
+      school: "",
+      course: "",
+      date: "",
+      description: "",
+    };
+  };
 
   const saveItem = () => {
     if (item.school === "") {
