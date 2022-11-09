@@ -52,6 +52,11 @@
       store.addItem({ ...item, id: new Date().getTime() });
     }
 
+    // @ts-ignore
+    Toastify({
+      text: "Successfully saved",
+    }).showToast();
+
     reset();
   };
 
@@ -65,7 +70,13 @@
 
   const close = () => (open = false);
 
-  const deleteItem = (i) => () => store.deleteItem(i.id);
+  const deleteItem = (i) => () => {
+    store.deleteItem(i.id);
+    // @ts-ignore
+    Toastify({
+      text: "Successfully deleted",
+    }).showToast();
+  };
 
   const editItem = (i) => () => {
     item = i;

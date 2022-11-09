@@ -4,10 +4,11 @@ const createStore = () => {
   const initialState = {
     open: false,
     item: {
-      name: "",
-      mobile_number: "",
-      email: "",
-      description: "",
+      name: "John Dave Decano",
+      mobile_number: "+639204809823",
+      email: "info@johndavedecano.me",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac risus pretium, lobortis odio sit amet, malesuada arcu. Fusce ultrices tincidunt metus, vel imperdiet nisi. Vestibulum nec neque et eros ultricies gravida. ",
     },
   };
 

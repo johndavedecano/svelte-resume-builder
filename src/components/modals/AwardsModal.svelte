@@ -64,6 +64,11 @@
     }
 
     reset();
+
+    // @ts-ignore
+    Toastify({
+      text: "Successfully saved",
+    }).showToast();
   };
 
   const reset = () => {
@@ -78,7 +83,13 @@
 
   const close = () => (open = false);
 
-  const deleteItem = (i) => () => store.deleteItem(i.id);
+  const deleteItem = (i) => () => {
+    store.deleteItem(i.id);
+    // @ts-ignore
+    Toastify({
+      text: "Successfully deleted",
+    }).showToast();
+  };
 
   const editItem = (i) => () => {
     item = i;
@@ -98,12 +109,12 @@
     {/if}
     <Form>
       <FormGroup>
-        <Label>School</Label>
-        <Input type="text" name="school" bind:value={item.school} />
+        <Label>Name</Label>
+        <Input type="text" name="name" bind:value={item.name} />
       </FormGroup>
       <FormGroup>
-        <Label>Course</Label>
-        <Input type="text" name="course" bind:value={item.course} />
+        <Label>Company</Label>
+        <Input type="text" name="company" bind:value={item.company} />
       </FormGroup>
       <FormGroup>
         <Label>Date</Label>
@@ -133,10 +144,10 @@
           <tr>
             <td>
               <div class="fw-bold">
-                {v.school}
+                {v.name}
               </div>
               <div class="text-muted">
-                {v.course} - {moment(v.date).format("LL")}
+                {v.company} - {moment(v.date).format("LL")}
               </div>
             </td>
             <td class="text-end">

@@ -73,6 +73,11 @@
       store.addItem({ ...item, id: new Date().getTime() });
     }
 
+    // @ts-ignore
+    Toastify({
+      text: "Successfully saved",
+    }).showToast();
+
     reset();
   };
 
@@ -89,7 +94,13 @@
 
   const close = () => (open = false);
 
-  const deleteItem = (i) => () => store.deleteItem(i.id);
+  const deleteItem = (i) => () => {
+    store.deleteItem(i.id);
+    // @ts-ignore
+    Toastify({
+      text: "Successfully saved",
+    }).showToast();
+  }
 
   const editItem = (i) => () => {
     item = i;
@@ -160,9 +171,9 @@
                 {v.company} at {v.name}
               </div>
               <div class="text-muted">
-                {moment(v.issued_at).format("LL")} - {moment(v.expires_at).format(
-                  "LL"
-                )}
+                {moment(v.issued_at).format("LL")} - {moment(
+                  v.expires_at
+                ).format("LL")}
               </div>
             </td>
             <td class="text-end">

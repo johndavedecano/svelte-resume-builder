@@ -58,6 +58,11 @@
     }
 
     store.saveChanges(item);
+
+    // @ts-ignore
+    Toastify({
+      text: "Successfully saved",
+    }).showToast();
   };
 </script>
 
