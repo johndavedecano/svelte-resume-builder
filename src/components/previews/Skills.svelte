@@ -5,7 +5,7 @@
 </script>
 
 <div class="d-flex flex-column mt-4">
-  <div class="h4">Skills</div>
+  <div class="h4">{$skillStore.name}</div>
   {#if skills.length}
     <table class="table table-bordered">
       <thead>

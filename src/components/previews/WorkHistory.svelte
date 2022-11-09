@@ -5,7 +5,9 @@
 </script>
 
 <div class="d-flex flex-column mt-4">
-  <div class="h4 mb-3">Work History</div>
+  <div class="h4 mb-3">
+    {$workHistory.name}
+  </div>
   <div class="d-flex flex-column">
     {#each items as item}
       <div class="d-flex flex-column mb-4">

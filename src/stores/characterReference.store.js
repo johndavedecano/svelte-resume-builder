@@ -17,6 +17,12 @@ const createStore = () => {
     toggle(open = false) {
       return update((v) => ({ ...v, open }));
     },
+    updateName(name) {
+      return update((v) => ({
+        ...v,
+        name,
+      }));
+    },
     updateItem(item) {
       return update((v) => ({
         ...v,

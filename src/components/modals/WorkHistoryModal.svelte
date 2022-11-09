@@ -30,6 +30,21 @@
   };
 
   let error = "";
+  let editName = false;
+  let sectionName = "";
+
+  const onEditSectionName = () => {
+    sectionName = $store.name;
+    editName = true;
+  };
+
+  const onSaveSectionName = () => {
+    if (sectionName) {
+      store.updateName(sectionName);
+      sectionName = "";
+      editName = false;
+    }
+  };
 
   const addNew = () => {
     open = true;
@@ -160,10 +175,26 @@
 
 <Modal isOpen={$store.open} {toggle} size="lg">
   <ModalHeader {toggle}>
-    {$store.name}
-    <button class="btn btn-sm">
-      <i class="fa fa-pencil" />
-    </button>
+    {#if editName}
+      <div class="input-group">
+        <input
+          type="text"
+          bind:value={sectionName}
+          class="form-control"
+          placeholder="Section name"
+        />
+        <button class="btn" type="button" on:click={onSaveSectionName}>
+          <i class="fa fa-check" />
+        </button>
+      </div>
+    {:else}
+      <div>
+        {$store.name}
+        <button class="btn btn-sm" on:click={onEditSectionName}>
+          <i class="fa fa-pencil" />
+        </button>
+      </div>
+    {/if}
   </ModalHeader>
   <ModalBody>
     <Table>

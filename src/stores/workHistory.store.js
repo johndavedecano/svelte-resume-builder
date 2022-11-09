@@ -2,7 +2,7 @@ import { writable } from "svelte/store";
 
 const createStore = () => {
   const initialState = {
-    name: 'Work History',
+    name: "Work History",
     open: false,
     items: [],
   };
@@ -16,6 +16,12 @@ const createStore = () => {
     update,
     toggle(open = false) {
       return update((v) => ({ ...v, open }));
+    },
+    updateName(name) {
+      return update((v) => ({
+        ...v,
+        name,
+      }));
     },
     updateItem(item) {
       return update((v) => ({

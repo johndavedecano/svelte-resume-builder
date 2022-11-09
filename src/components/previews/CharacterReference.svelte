@@ -1,11 +1,12 @@
 <script>
-  import moment from "moment";
   import { store as characterReference } from "./../../stores/characterReference.store";
   $: items = $characterReference.items;
 </script>
 
 <div class="d-flex flex-column mt-4">
-  <div class="h4 mb-3">Character Reference</div>
+  <div class="h4 mb-3">
+    {$characterReference.name}
+  </div>
   <div class="d-flex flex-column">
     {#each items as item}
       <div class="d-flex flex-column mb-4">

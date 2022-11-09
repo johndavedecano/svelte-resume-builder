@@ -4,9 +4,9 @@ const createStore = () => {
   const initialState = {
     open: false,
     item: {
-      name: "John Dave Decano",
+      name: "John Dave Reyes",
       mobile_number: "+639204809823",
-      email: "info@johndavedecano.me",
+      email: "info@johnpaulreyes.me",
       headline: "Summary",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac risus pretium, lobortis odio sit amet, malesuada arcu. Fusce ultrices tincidunt metus, vel imperdiet nisi. Vestibulum nec neque et eros ultricies gravida. ",
