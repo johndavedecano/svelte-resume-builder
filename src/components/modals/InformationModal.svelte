@@ -14,7 +14,10 @@
 
   import { store } from "./../../stores/information.store";
 
-  const toggle = () => store.toggle(!$store.open);
+  const toggle = () => {
+    error = "";
+    store.toggle(!$store.open);
+  };
 
   let set = false;
 

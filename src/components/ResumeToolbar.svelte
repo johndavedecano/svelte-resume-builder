@@ -3,13 +3,13 @@
 </script>
 
 <div class="resume-toolbar d-flex align-items-center">
-  <div class="flex-grow-1 fw-bold">Filename.pdf</div>
-  <button class="btn btn-success me-2 btn-lg btn-sm">
+  <div class="flex-grow-1 fw-bold">Lets building your resume today.</div>
+  <!-- <button class="btn btn-success me-2 btn-lg btn-sm">
     <i class="fa fa-comment" />
   </button>
   <button class="btn btn-primary btn-lg btn-sm me-2">
     <i class="fa fa-download" />
-  </button>
+  </button> -->
 </div>
 
 <style>
