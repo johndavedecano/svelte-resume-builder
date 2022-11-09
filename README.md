@@ -1,6 +1,7 @@
-# Svelte + Vite
+# Svelte Resume Builder
+100% free resume builder using and demonstrating the power of SvelteJS
 
-This template should help get you started developing with Svelte in Vite.
+![My Image](https://raw.github.com/johndavedecano/svelte-resume-builder/master/preview.png)
 
 ## Recommended IDE Setup
 
