@@ -2,6 +2,7 @@ import { writable } from "svelte/store";
 
 const createStore = () => {
   const initialState = {
+    name: "Skills",
     open: false,
     items: [],
   };

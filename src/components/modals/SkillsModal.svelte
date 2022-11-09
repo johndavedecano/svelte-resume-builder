@@ -122,7 +122,12 @@
 </Modal>
 
 <Modal isOpen={$store.open} {toggle} size="lg">
-  <ModalHeader {toggle}>Skills</ModalHeader>
+  <ModalHeader {toggle}>
+    {$store.name}
+    <button class="btn btn-sm">
+      <i class="fa fa-pencil" />
+    </button>
+  </ModalHeader>
   <ModalBody>
     <Table>
       <tbody>

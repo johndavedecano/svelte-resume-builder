@@ -100,7 +100,7 @@
     Toastify({
       text: "Successfully saved",
     }).showToast();
-  }
+  };
 
   const editItem = (i) => () => {
     item = i;
@@ -160,7 +160,12 @@
 </Modal>
 
 <Modal isOpen={$store.open} {toggle} size="lg">
-  <ModalHeader {toggle}>Certifications</ModalHeader>
+  <ModalHeader {toggle}>
+    {$store.name}
+    <button class="btn btn-sm">
+      <i class="fa fa-pencil" />
+    </button>
+  </ModalHeader>
   <ModalBody>
     <Table>
       <tbody>

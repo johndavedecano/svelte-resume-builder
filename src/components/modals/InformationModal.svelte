@@ -24,6 +24,7 @@
       mobile_number: $store.item.mobile_number,
       email: $store.item.email,
       description: $store.item.description,
+      headline: $store.item.headline,
     };
     set = true;
   }
@@ -32,6 +33,7 @@
     name: "",
     mobile_number: "",
     email: "",
+    headline: "Summary",
     description: "",
   };
 
@@ -49,6 +51,11 @@
 
     if (item.email === "") {
       error = "email from field is required";
+      return;
+    }
+
+    if (item.headline === "") {
+      error = "headline field is required";
       return;
     }
 
@@ -90,6 +97,10 @@
           name="mobile_number"
           bind:value={item.mobile_number}
         />
+      </FormGroup>
+      <FormGroup>
+        <Label>Headline</Label>
+        <Input type="text" name="headline" bind:value={item.headline} />
       </FormGroup>
       <FormGroup>
         <Label>Description</Label>
