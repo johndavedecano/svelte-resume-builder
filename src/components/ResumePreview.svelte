@@ -36,6 +36,7 @@
     background-color: white;
     min-height: 297mm;
     min-width: 210mm;
+    max-width: 210mm;
   }
   .resume-inner {
     padding: 50px;
