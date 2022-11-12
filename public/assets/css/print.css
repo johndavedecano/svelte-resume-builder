@@ -1,0 +1,9 @@
+#resume {
+  margin: 50px;
+}
+
+@media print {
+  #resume {
+    margin: 0px;
+  }
+}

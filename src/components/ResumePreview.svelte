@@ -19,7 +19,7 @@
   };
 </script>
 
-<div class="resume-wrapper">
+<div class="resume-wrapper" id="resume">
   <div class="resume-inner">
     {#each $store.sections as item (item.id)}
       {#if item.visible}
