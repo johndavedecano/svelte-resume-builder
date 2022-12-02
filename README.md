@@ -3,6 +3,15 @@
 
 ![My Image](https://raw.github.com/johndavedecano/svelte-resume-builder/master/preview.png)
 
+## Install
+
+```
+git clone git@github.com:johndavedecano/svelte-resume-builder.git
+cd svelte-resume-builder
+npm i
+npm run dev
+```
+
 ## Recommended IDE Setup
 
 [VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
