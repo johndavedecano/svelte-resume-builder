@@ -75,14 +75,4 @@
       </li>
     {/each}
   </ul>
-  <script type="text/javascript">
-    atOptions = {
-      'key' : '15374bfee5e6d33a42d01f8f12573bde',
-      'format' : 'iframe',
-      'height' : 250,
-      'width' : 300,
-      'params' : {}
-    };
-    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformat.com/15374bfee5e6d33a42d01f8f12573bde/invoke.js"></scr' + 'ipt>');
-  </script>
 </div>
